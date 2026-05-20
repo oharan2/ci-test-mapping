@@ -118,6 +118,7 @@ import (
 	multiarcharm "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/arm"
 	multiarchibmpandz "github.com/openshift-eng/ci-test-mapping/pkg/components/multiarch/ibmpandz"
 	"github.com/openshift-eng/ci-test-mapping/pkg/components/multiarchtuningoperator"
+	"github.com/openshift-eng/ci-test-mapping/pkg/components/mycomplpinterop"
 	networkingcloudnetworkconfigcontroller "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/cloudnetworkconfigcontroller"
 	networkingclusternetworkoperator "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/clusternetworkoperator"
 	networkingdns "github.com/openshift-eng/ci-test-mapping/pkg/components/networking/dns"
@@ -463,6 +464,7 @@ func NewComponentRegistry() *Registry {
 	r.Register("Serverless-lp-interop", &serverlesslpinterop.ServerlessLpInteropComponent)
 	r.Register("ODF-lp-interop", &odflpinterop.ODFLpInteropComponent)
 	r.Register("MTA-lp-interop", &mtalpinterop.MTALpInteropComponent)
+	r.Register("MYComp-lp-interop", &mycomplpinterop.MYCompLpInteropComponent)
 	r.Register("Gitops-lp-interop", &gitopslpinterop.GitopsLpInteropComponent)
 	r.Register("ACSLatest-lp-interop", &acslatestlpinterop.ACSLatestLpInteropComponent)
 	r.Register("ACS-lp-interop", &acslpinterop.ACSLpInteropComponent)
